@@ -1,6 +1,6 @@
 pipeline {
-    agents {
-        label 'generic'
+    agent {
+        label 'wombat'
     } // agent
     stages {
         stage("Setup script") {

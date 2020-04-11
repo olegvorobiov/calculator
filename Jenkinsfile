@@ -20,9 +20,9 @@ pipeline {
     } // stages
     post {
         always {
-            sh """
-                pip uninstall -y pytest
-            """
+            //sh """
+            //    pip uninstall -y pytest
+            //"""
         } // always
     } // post
 } // pipeline

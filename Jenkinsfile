@@ -6,7 +6,7 @@ pipeline {
         stage("Setup script") {
             steps {
                 sh """
-                    pip3 install pytest
+                    sudo pip3 install pytest
                 """
             } // steps
         } // stage

@@ -21,7 +21,7 @@ pipeline {
     post {
         always {
             sh """
-                pip3 uninstall -y pytest
+                sudo pip3 uninstall -y pytest
             """
         } // always
     } // post

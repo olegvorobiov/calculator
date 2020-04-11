@@ -6,23 +6,23 @@ pipeline {
         stage("Setup script") {
             steps {
                 sh """
-                    pip install pytest
+                    pip3 install pytest
                 """
             } // steps
         } // stage
         stage("Run unit tests") {
             steps {
                 sh """
-                    python -m pytest
+                    python3 -m pytest
                 """
             } // steps
         } // stage
     } // stages
     post {
         always {
-            //sh """
-            //    pip uninstall -y pytest
-            //"""
+            sh """
+                pip3 uninstall -y pytest
+            """
         } // always
     } // post
 } // pipeline
